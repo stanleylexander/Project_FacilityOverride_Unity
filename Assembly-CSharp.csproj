@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{03595F7E-D4DF-5CB5-80A0-86CB25B6C812}</ProjectGuid>
+    <ProjectGuid>{5FDA2978-265A-B6EF-0498-CC67F225E609}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -58,12 +58,14 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Node.cs" />
-    <Compile Include="Assets\Scripts\GridBlock.cs" />
-    <Compile Include="Assets\Scripts\Pathfinding.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Node.cs" />
     <Compile Include="Assets\Scripts\EnemyWandering.cs" />
+    <Compile Include="Assets\Scripts\Pathfinding.cs" />
     <Compile Include="Assets\Scripts\EnemySeeking.cs" />
+    <Compile Include="Assets\Scripts\GridBlock.cs" />
+    <Compile Include="Assets\Scripts\EnemyFleeing.cs" />
+    <Compile Include="Assets\Scripts\EnemyRadius.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

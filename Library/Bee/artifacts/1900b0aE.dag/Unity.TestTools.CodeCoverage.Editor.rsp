@@ -114,8 +114,8 @@
 -define:NO_COV_EDITORPREF
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
--r:"D:/Kuliah/Tugas Kuliah Sem 6/AI for Game/UTS_FacilityOverride/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
--r:"D:/Kuliah/Tugas Kuliah Sem 6/AI for Game/UTS_FacilityOverride/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/lib/ReportGenerator/ReportGeneratorMerged.dll"
+-r:"D:/Kuliah/Tugas Kuliah Sem 6/AI for Game/Project_FacilityOverride_Unity/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
+-r:"D:/Kuliah/Tugas Kuliah Sem 6/AI for Game/Project_FacilityOverride_Unity/Library/PackageCache/com.unity.testtools.codecoverage@1.2.6/lib/ReportGenerator/ReportGeneratorMerged.dll"
 -r:"D:/Unity Pack/Install Location/2021.3.45f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"D:/Unity Pack/Install Location/2021.3.45f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"D:/Unity Pack/Install Location/2021.3.45f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"

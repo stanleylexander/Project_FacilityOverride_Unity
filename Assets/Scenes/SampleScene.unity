@@ -266,7 +266,7 @@ MonoBehaviour:
   wallMask:
     serializedVersion: 2
     m_Bits: 8
-  gridWorldSize: {x: 20, y: 20}
+  gridWorldSize: {x: 70, y: 70}
   nodeRadius: 0.5
   distanceBetweenNodes: 0.1
 --- !u!4 &732013340
@@ -282,7 +282,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
@@ -493,13 +493,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1393644097}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.05, y: 1.15, z: 2.5149305}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1393644099
 CapsuleCollider:
@@ -696,7 +696,7 @@ Transform:
   m_GameObject: {fileID: 1697071616}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 3}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -715,9 +715,12 @@ GameObject:
   - component: {fileID: 1966332455}
   - component: {fileID: 1966332454}
   - component: {fileID: 1966332458}
+  - component: {fileID: 1966332462}
+  - component: {fileID: 1966332461}
+  - component: {fileID: 1966332460}
   - component: {fileID: 1966332459}
   m_Layer: 0
-  m_Name: Guardian
+  m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -827,13 +830,56 @@ MonoBehaviour:
   m_GameObject: {fileID: 1966332452}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c2bfff23f9ac4549b9c3558c4377a04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1393644097}
+  detectionRadius: 20
+  fleeTime: 30
+--- !u!114 &1966332460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966332452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca11c93aafefb774bbe8e9871d0f8325, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 3
+  target: {fileID: 1393644097}
+--- !u!114 &1966332461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966332452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7bb3c98d18c1e5c4a971f40a40f17a3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 3
   pathfinding: {fileID: 732013338}
-  nodeReachThreshold: 0.5
+  nodeReachThreshold: 0.2
   obstacleMask:
     serializedVersion: 2
     m_Bits: 8
-  obstacleCheckDistance: 2
+  obstacleCheckDistance: 1
+--- !u!114 &1966332462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966332452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bc7891fdcdde2047b207ea47a8b1def, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1
+  wanderCooldown: 1
